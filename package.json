@@ -1,0 +1,25 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Burger logger utilizing mySQL, Node, Express, Handlebars and object-relational programming.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mig9tx/burger.git"
+  },
+  "author": "Miguel Trujillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mig9tx/burger/issues"
+  },
+  "homepage": "https://github.com/mig9tx/burger#readme"
+}
