@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 //Import the model (burger.js) to use its database functions.
-const burger = require("../models/burger.js").default;
+const burger = require("../models/burger.js");
 
 //Creat all rooutes and set up logic within the routes required.
 

@@ -3,18 +3,18 @@
 $(function(){
     $(".change-devoured").on("click", function(event) {
         const id = $(this).data("id");
-        const newDevour = $(this).data("newdevour");
+        const newDevoured = $(this).data("newdevoured");
 
-        var newDevourState = {
-            devour: newDevour
+        var newDevouredState = {
+            devoured: newDevoured
         };
 
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
-            data: newDevourState
+            data: newDevouredState
         }).then(
             function() {
-                console.log("changed devour to", newDevour);
+                console.log("changed devoured to", newDevoured);
                 // Page reload for updated list
                 location.reload();
             }
@@ -26,8 +26,8 @@ $(function(){
         event.preventDefault();
 
         var newBurger = {
-            name: $("#bu").val().trim(),
-            devour: $("[name=devour]:checked").val().trim();
+            burger_name: $("#bu").val().trim(),
+            devoured: $("[name=devoured]:checked").val().trim()
         };
 
         $.ajax("/api/burgers", {
