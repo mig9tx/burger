@@ -1,7 +1,7 @@
 //
 
 $(function(){
-    $("#devour").on("click", function(event) {
+    $(".devour").on("click", function(event) {
         let id = $(this).attr("data-id");
         // let devour = $(this).attr("value");
         console.log(id);

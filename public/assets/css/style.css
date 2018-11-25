@@ -4,6 +4,7 @@ font-family: 'VT323', monospace; */
 body {
     align-content: center;
     background-color: #9b6631;
+    /* background-image: linear-gradient( #9b6631, #e2cf21); */
     color: white;
     text-align: center;
     
